@@ -12,7 +12,6 @@
 
 # Screenshot
 ![Index page](index.png)
-<hr>
 ![Team Api](teams.png)
 # About the Project
 There are 4 models Players, Teams, Tournament, Match which is accessible through api-end points.
