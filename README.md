@@ -1,2 +1,4 @@
-# tournament-django
-Simple API demo using Django and Djangorestframework.
+# Run the Project
+1. git clone 
+2. cd 
+3. 
