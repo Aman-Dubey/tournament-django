@@ -11,7 +11,7 @@
 10. The website is ready to be seved on **localhost:5000**
 
 # Screenshot
-![Index page]()
-![Team Api]()
+![Index page](index.png)
+![Team Api](teams.png)
 # About the Project
 There are 4 models Players, Teams, Tournament, Match which is accessible through api-end points.

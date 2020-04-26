@@ -5,18 +5,25 @@ class Teams(models.Model):
     name=models.CharField(max_length=100)
     owner=models.CharField(max_length=100)
     logo=models.ImageField(upload_to='media',blank=True)
+    def __str__(self):
+        return self.name
+    
 class Players(models.Model):
     name=models.CharField(max_length=100)
     age=models.IntegerField(default=25)
     nationality=models.CharField(max_length=30, default='INDIA')
     team=models.ForeignKey(Teams, on_delete=models.CASCADE)
     profile_pic=models.ImageField(upload_to='media',blank=True)
+    def __str__(self):
+        return self.name
 class Tournament(models.Model):
     name=models.CharField(max_length=100, blank=True, default='')
     started_on=models.DateTimeField()
     no_of_teams=models.IntegerField(default=10)
     no_of_matches=models.IntegerField(default=45)
     man_of_series=models.OneToOneField(Players,on_delete=models.CASCADE)
+    def __str__(self):
+        return self.name
 class Match(models.Model):
     match_date=models.DateTimeField()
     location=models.CharField(max_length=50)
